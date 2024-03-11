@@ -1,0 +1,20 @@
+<po-page-list #poPageList p-title="Lista de clientes">
+
+  <po-table p-container="true" [p-height]="400" [p-actions]="actions" [p-hide-detail]="false"
+    [p-hide-table-search]="false" [p-selectable]="true" [p-sort]="true" [p-striped]="true" [p-columns]="fields"
+    [p-items]="customers" [p-hide-batch-actions]="false" (p-delete-items)="deleteItems($event)">
+  </po-table>
+
+  <po-divider></po-divider>
+
+  <div class="po-row">
+    <po-button class="po-md-3" p-icon="po-icon-add" p-label="Adicionar cliente" (p-click)="addCostumer()"> </po-button>
+  </div>
+</po-page-list>
+
+<po-modal p-click-out="true" p-size="sm" p-title="Detalhes do cliente">
+  <po-info class="po-sm-4" p-label="Nome" [p-value]="customer?.name"> </po-info>
+  <po-info class="po-sm-4" p-label="Endereço" [p-value]="customer?.address"> </po-info>
+  <po-info class="po-sm-3" p-label="Bairro" [p-value]="customer?.district"> </po-info>
+  <po-info class="po-sm-5" p-label="Telefone(s)" [p-value]="customer?.phonesNumbers"> </po-info>
+</po-modal>

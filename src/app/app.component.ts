@@ -1,10 +1,16 @@
 import { Component } from '@angular/core';
 
+import { PoMenuItem } from '@po-ui/ng-components';
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrl: './app.component.scss'
+  styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'totvs-ui';
+
+  public readonly menus: Array<PoMenuItem> = [
+    { label: 'Início', link: '/home' },
+    { label: 'Clientes', link: '/customers' },
+  ];
 }
