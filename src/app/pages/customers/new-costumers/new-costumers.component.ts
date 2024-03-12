@@ -68,7 +68,7 @@ export class NewCostumersComponent implements OnInit {
     customer.name = form.name;
     customer.district = form.district;
     customer.phones = [form.phonesNumbers];
-    if (!customer) {
+    if (!this.customer) {
       this.customersService.create(customer).subscribe({
         next: (data) => {
           this.notificationService.success(`Cliente ${data.name} cadastrado com sucesso`);
@@ -78,6 +78,7 @@ export class NewCostumersComponent implements OnInit {
         error: (err) => this.notificationService.error(err.error.message)
       })
     } else {
+      console.log(customer)
       customer.id = this.customer.id;
       this.customersService.update(customer).subscribe({
         next: (data) => {
