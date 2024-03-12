@@ -1,3 +1,30 @@
+# Sistema de Gerenciamento de Clientes
+
+Este é um sistema simples de gerenciamento de clientes com um front-end que permite a inserção, visualização, edição e exclusão de dados de clientes. Além disso, inclui validações para garantir a integridade dos dados.
+
+# Funcionalidades
+
+1. ### Front-end com campos de inserção:
+- Implementando front-end com campos para inserção de dados de cliente.
+- Campos incluem: nome, endereço, bairro e telefones.
+
+2. ### Visualização, Edição e Exclusão de clientes:
+- Desenvolvida a funcionalidade de visualizar informações detalhadas do cliente.
+- Implementada a capacidade de editar dados existentes.
+- Adicionada a opção de excluir um cliente do sistema.
+
+3. ### Validação de Dados:
+- Validar se o nome do cliente possui mais de 10 caracteres.
+- Evitar a inserção de dados redundantes para garantir a integridade do sistema.
+
+4. ### Validação de Telefones:
+- Implementada a validação para garantir que os números de telefone inseridos sejam válidos.
+
+
+# O seu sistema de gerenciamento de clientes está agora no ar e pronto para simplificar suas operações!
+
+Além de gerenciar instruções para deploy da aplicação, aqui está o link da aplicação publicada em uma cloud gratuita para você poder explorar as funcionalidades do sistema: https://challenge-totvs-ui.onrender.com
+
 # TotvsUi
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.2.3.
